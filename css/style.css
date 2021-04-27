@@ -94,7 +94,7 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
-.u-margin-top-big {
+.u-margin-top-huge {
   margin-top: 13.5rem; }
 
 .u-margin-bottom-med {
@@ -204,6 +204,8 @@ body {
   .card__picture {
     background-size: cover;
     height: 12.5rem;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
     clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%); }
