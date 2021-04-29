@@ -1,20 +1,20 @@
 .form {
   &__group:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   &__input {
-    font-size: 1.2rem;
-    font-size: inherit;
+    font-size: 1.5rem;
+    font-family: inherit;
     color: inherit;
-    padding: 0.8rem 2rem;
+    padding: 1.5rem 2rem;
     border-radius: 2px;
-    background-color: rgba($color-white, 0.5);
+    background-color: rbga($color-white, 0.5);
     border: none;
     border-bottom: 3px solid transparent;
     width: 90%;
-    transition: all 0.3s;
     display: block;
+    transition: all 0.3s;
 
     &:focus {
       outline: none;
@@ -32,7 +32,7 @@
   }
 
   &__label {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     margin-left: 2rem;
     margin-top: 0.7rem;
@@ -56,27 +56,27 @@
   }
 
   &__radio-label {
-    font-size: 1rem;
+    font-size: 1.6rem;
     cursor: pointer;
     position: relative;
-    padding-left: 3.125rem;
+    padding-left: 4.5rem;
   }
 
   &__radio-button {
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     border: 5px solid $color-primary;
     border-radius: 50%;
     display: inline-block;
     position: absolute;
     left: 0;
-    top: -0.33rem;
+    top: -0.4rem;
 
     &::after {
       content: "";
-      height: 1rem;
-      width: 1rem;
       display: block;
+      height: 1.3rem;
+      width: 1.3rem;
       border-radius: 50%;
       position: absolute;
       top: 50%;

@@ -1,11 +1,11 @@
 .section-about {
   background-color: $color-grey-light-1;
-  padding: 18rem 5rem;
-  margin-top: -25vh;
+  padding: 25rem 0;
+  margin-top: -20vh;
 }
 
 .section-features {
-  padding: 12.5rem 5rem;
+  padding: 20rem 0;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
@@ -23,17 +23,17 @@
 
 .section-tours {
   background-color: $color-grey-light-1;
-  padding: 18rem 0 10rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -10rem;
 }
 
 .section-stories {
   position: relative;
-  padding: 10rem 0;
+  padding: 15rem 0;
 }
 
 .section-book {
-  padding: 10rem 0;
+  padding: 15rem 0;
   background-image: linear-gradient(
     to right bottom,
     $color-primary-light,
