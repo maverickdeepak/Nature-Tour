@@ -571,6 +571,8 @@ body {
     overflow: hidden;
     transition: all 1s 1s;
     transform: translate(-50%, -50%); }
+  .popup__text {
+    font-size: 1.4rem; }
   .popup__left {
     width: 33.333333%;
     display: table-cell; }
@@ -584,10 +586,10 @@ body {
     padding: 3rem 5rem; }
   .popup__close {
     position: absolute;
-    right: 1rem;
-    top: 0;
+    top: 2.5rem;
+    right: 2.5rem;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #55c57a; }
 
 .story {

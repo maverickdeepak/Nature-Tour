@@ -25,6 +25,10 @@
     transform: translate(-50%, -50%);
   }
 
+  &__text {
+    font-size: 1.4rem;
+  }
+
   &__left {
     width: 33.333333%;
     display: table-cell;
@@ -44,10 +48,10 @@
 
   &__close {
     position: absolute;
-    right: 1rem;
-    top: 0;
+    top: 2.5rem;
+    right: 2.5rem;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 3rem;
     color: $color-primary;
   }
 }
