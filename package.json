@@ -4,11 +4,26 @@
   "description": "Landing page for natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:sass": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    "prefix:sass": "postcss --use autoprefixer -b \"last 10 version\" css/style.concat.css -o css/style.prefix.css",
+    "compress:sass": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:sass": "npm-run-all compile:sass concat:sass prefix:sass compress:sass"
   },
   "author": "Deepak",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "autoprefixer": "^10.2.5",
+    "concat": "^1.0.3",
+    "node-sass": "^5.0.0",
+    "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.13"
   }
 }
